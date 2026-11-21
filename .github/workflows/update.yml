@@ -32,3 +32,9 @@ jobs:
             git commit -m "Update hosts"
             git push
           )
+
+      - name: Sync AdGuard DNS user rules
+        env:
+          ADGUARD_API_KEY: ${{ secrets.ADGUARD_API_KEY }}
+          ADGUARD_DNS_SERVER_ID: ${{ vars.ADGUARD_DNS_SERVER_ID }}
+        run: python sync_adguard.py
