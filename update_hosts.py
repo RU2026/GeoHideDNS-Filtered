@@ -6,7 +6,7 @@ import ipaddress
 
 SOURCE_URL = (
     "https://raw.githubusercontent.com/"
-    "Internet-Helper/GeoHideDNS/refs/heads/main/hosts/hosts"
+    "Internet-Helper/GeoHideDNS/refs/heads/main/hosts/eu/hosts"
 )
 
 TARGET_BLOCKS = [
